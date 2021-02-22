@@ -1,4 +1,4 @@
-const hashmap = require('./.vscode/hashmap');
+const hashmap = require('./hashmap');
 
 function main() {
   const lotr = new hashmap();
