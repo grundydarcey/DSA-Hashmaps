@@ -1,3 +1,5 @@
+const HashMap = require('./hashmap');
+const { _hashString } = require('./hashmap');
 const hashmap = require('./hashmap');
 
 function main() {
@@ -10,9 +12,7 @@ function main() {
   lotr.set('Human', 'Aragorn');
   lotr.set('Elf', 'Legolas');
   lotr.set('Maiar', 'The Necromancer');
-  lotr.set('Maiar', 'Sauron');\
-  \
-  \xz
+  lotr.set('Maiar', 'Sauron');
   lotr.set('RingBearer', 'Gollum');
   lotr.set('LadyOfLight', 'Galadriel');
   lotr.set('HalfElven', 'Arwen');
@@ -23,6 +23,15 @@ function main() {
 }
 
 main();
+//Maiar and Hobbit has the discrepancy because there are two different values for each of their keys
+//Capacity is at 8 becuase that's what it starts at
+
+
 //problem 2:
 //logs 'Hello world.', '10'
 //logs 'Hello world.', '20'
+
+
+const problemThree = new HashMap();
+problemThree._hashString(10, 22, 31, 4, 15, 28, 17, 88, 59);
+console.log(problemThree);
